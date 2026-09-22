@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# local agent/tooling state
+.commandcode/
+
+# FreeCAD backups
+*.FCStd1
+*.FCStd2
+*.FCBak
