@@ -26,8 +26,8 @@ STLs are in **assembly orientation** — lay them flat in the slicer (see notes 
 | 12 | `x12_Shim_1x6` | `Shim_1x6.stl` | output pins, 2 per pin |
 | 6 | `x6_Shim_1x15` | `Shim_1x15.stl` | input shaft bearings |
 
-106 printed parts total. The 16 ring pins are the only printed part carrying real load — if you
-have Ø6 mm ground steel rod, use it instead of printing them.
+106 printed parts total. The 16 ring pins are the only printed part carrying real load, and they
+print hollow for a reason — see below.
 
 ## Buy these — do not print
 
@@ -37,15 +37,24 @@ have Ø6 mm ground steel rod, use it instead of printing them.
 | 44 | Ball bearing 686-2RS — 6×13×5 mm (16 ring positions ×2, + 6 output pins ×2) |
 | 4 | Ball bearing 6802-2RS — 15×24×5 mm |
 | 2 | Ball bearing 6807-2RS — 35×47×7 mm |
+| 16 | **3 mm metal shaft, 35 mm long** — slides inside the printed ring pins (optional if you use Ø6 dowels) |
 | 8 | Bolt M4×40 (housing ↔ lid) |
 | 6 | Bolt M3×20 (output roller pins) |
 | 2 | Bolt M3×30 (clamps the 4 input-shaft sections) |
-| 4 | Bolt M3×10 |
-| 4 | Bolt M3×8 |
-| 8 | Threaded insert M4 (heat-set) |
-| 9 | Threaded insert M3 (heat-set) |
+| 4 | Bolt M3×10 (motor mount ↔ housing) |
+| 4 | Bolt M3×8 (motor ↔ mount, NEMA 17 pattern) |
+| 8 | Threaded insert M4 (heat-set, housing back) |
+| 9 | Threaded insert M3 (heat-set, 6 front output face + 2 input shaft + 1 coupler) |
 
 Buy spares of the 686 bearings — 44 identical small parts, some will be gritty.
+
+**The hollow pins:** the author wasn't confident a solid printed pin would survive the ring
+load, so he made them hollow and slid 3 mm steel shaft down the middle of each — that's why
+every pin in this model has a 3 mm bore. Either do that, or skip the printed pins entirely and
+buy 16 × Ø6 × 35 mm ground steel dowels. Do not substitute M6 bolts; they measure under 6 mm
+and the bearings will wobble on them.
+
+Build order, stack heights and the fits that will bite you: [`../ASSEMBLY.md`](../ASSEMBLY.md).
 
 ## Slicer settings that matter
 
