@@ -13,6 +13,8 @@ motor at the back (X=20), output face at the front (X=129).
   front output face, 2 in the back of the input shaft, 1 in the motor coupler area.
   Once the gearbox is stacked you cannot reach them.
 - Chase the 6 mm pin bores in the housing and lid. This is a tight build and every bore matters.
+  The [`3MF_PRINT_READY/`](3MF_PRINT_READY/) projects pre-compensate the bores (0.07 mm hole /
+  0.02 mm contour), so printing straight from those gets you there without slicer tuning.
 - Test-fit a 686 bearing in a housing pin bore. Press fit, not hammer fit. If it's wrong, stop
   and fix your Hole Horizontal Expansion before printing the lid.
 

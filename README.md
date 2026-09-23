@@ -47,9 +47,31 @@ Measured on the author's build: **260 N·cm out of the gearbox from a 26 N·cm N
 |------|-----------|
 | `Cycloidal Drive - PRINT READY.FCStd` | cleaned FreeCAD model, parts grouped and named |
 | `STL/01_PRINT_THESE/` | 15 folders, one per printed part, quantity in the folder name |
+| `3MF_PRINT_READY/` | the whole drive as 5 ready-to-slice Bambu projects, P1S and H2D |
 | `STL/PRINT_LIST.md` | print list, buy list, slicer settings |
+| `BOM.md` | hardware buy list with prices, sources, and CAD fit checks |
 | `ASSEMBLY.md` | build order, verified stack heights, and the gotchas |
 | `Cycloidal Drive - 3D Printable DIY.STEP` | the original author's CAD, unmodified |
+
+## Print it without slicing
+
+`3MF_PRINT_READY/` has the whole drive as Bambu Studio projects — all 106 parts, plates arranged,
+no supports. The layout differs by machine, not by part: the H2D's bed swallows the motor mount
+and coupler onto its structural plate, so the same 106 parts take two plates there and three on
+the P1S. Load one, check the plate preview, print.
+
+| Project | Covers |
+|---------|--------|
+| `H2D_01_structural.3mf` | housing, lid, both disks, both output flanges, 4 shaft sections, motor mount, coupler |
+| `H2D_02_smallparts.3mf` | 16 ring pins, 6 output pins, 32 × 7 mm + 16 × 3 mm spacers, 6 rings, 18 shims |
+| `P1S_01_bigdiscs.3mf` | housing, lid, both disks, both output flanges |
+| `P1S_02_shaftparts.3mf` | 4 shaft sections, motor mount, coupler |
+| `P1S_03_smallparts.3mf` | the small parts, same 85 as the H2D's second plate |
+
+The profiles are already what this repo asks for — **0.07 mm hole / 0.02 mm contour expansion**,
+0.2 mm layers, 5 walls, no supports, 50 % gyroid on the big parts and 100 % grid with an auto
+brim on the small ones, Bambu PLA Basic on the High Temp plate. So skip the calibration plate if
+you print these on a Bambu with that filament; calibrate first if your setup differs.
 
 ## Print quantities
 
@@ -71,6 +93,8 @@ Measured on the author's build: **260 N·cm out of the gearbox from a 26 N·cm N
 [`STL/PRINT_LIST.md`](STL/PRINT_LIST.md).
 
 ## Before you print
+
+Not slicing it from the STLs? The `3MF_PRINT_READY/` projects already carry the settings below.
 
 Set **Hole Horizontal Expansion ≈ 0.07 mm** in your slicer. Printed bores come out undersize,
 and that setting is what makes the 13 mm and 24 mm bearing seats press-fit instead of either

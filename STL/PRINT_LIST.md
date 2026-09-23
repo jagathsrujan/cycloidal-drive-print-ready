@@ -47,6 +47,7 @@ print hollow for a reason — see below.
 | 9 | Threaded insert M3 (heat-set, 6 front output face + 2 input shaft + 1 coupler) |
 
 Buy spares of the 686 bearings — 44 identical small parts, some will be gritty.
+Prices, sources and the CAD-measured insert lengths: [`../BOM.md`](../BOM.md).
 
 **The hollow pins:** the author wasn't confident a solid printed pin would survive the ring
 load, so he made them hollow and slid 3 mm steel shaft down the middle of each — that's why
@@ -57,6 +58,8 @@ and the bearings will wobble on them.
 Build order, stack heights and the fits that will bite you: [`../ASSEMBLY.md`](../ASSEMBLY.md).
 
 ## Slicer settings that matter
+
+Already baked into [`../3MF_PRINT_READY/`](../3MF_PRINT_READY/) if you're printing on a Bambu.
 
 - **Hole Horizontal Expansion ≈ 0.07 mm** and **Horizontal Expansion ≈ 0.02 mm**. Printed holes
   come out undersize; this is what turns the bearing bores into press fits. Calibrate on a test
