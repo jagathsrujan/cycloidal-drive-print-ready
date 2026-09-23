@@ -55,10 +55,9 @@ Measured on the author's build: **260 N·cm out of the gearbox from a 26 N·cm N
 
 ## Print it without slicing
 
-`3MF_PRINT_READY/` has the whole drive as Bambu Studio projects — all 106 parts, plates arranged,
-no supports. The layout differs by machine, not by part: the H2D's bed swallows the motor mount
-and coupler onto its structural plate, so the same 106 parts take two plates there and three on
-the P1S. Load one, check the plate preview, print.
+`3MF_PRINT_READY/` carries the whole drive as Bambu Studio projects, split for a P1S and an H2D.
+The split differs by machine, not by part: the H2D's bed takes the motor mount and coupler onto
+its structural plate, so the same 106 parts make two projects there and three on the P1S.
 
 | Project | Covers |
 |---------|--------|
@@ -68,10 +67,14 @@ the P1S. Load one, check the plate preview, print.
 | `P1S_02_shaftparts.3mf` | 4 shaft sections, motor mount, coupler |
 | `P1S_03_smallparts.3mf` | the small parts, same 85 as the H2D's second plate |
 
-The profiles are already what this repo asks for — **0.07 mm hole / 0.02 mm contour expansion**,
-0.2 mm layers, 5 walls, no supports, 50 % gyroid on the big parts and 100 % grid with an auto
-brim on the small ones, Bambu PLA Basic on the High Temp plate. So skip the calibration plate if
-you print these on a Bambu with that filament; calibrate first if your setup differs.
+They are unsliced, and the parts are **not arranged yet** — every object is stacked at the plate
+centre, so the first thing to do after opening one is Arrange (or the model prints as a tower).
+Nothing has a saved plate time either; slice once to get the real number.
+
+What is already set is the profile, exactly what this repo asks for — **0.07 mm hole / 0.02 mm
+contour expansion**, 0.2 mm layers, 5 walls, no supports, 50 % gyroid on the big parts and 100 %
+grid with an auto brim on the small ones, Bambu PLA Basic on the High Temp plate. So skip the
+calibration plate if you print these on a Bambu with that filament; calibrate if your setup differs.
 
 ## Print quantities
 
