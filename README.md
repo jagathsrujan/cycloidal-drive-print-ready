@@ -12,7 +12,7 @@ of what is printable, what you have to buy, or how many of each to make.
 
 [![3D-printed gearbox running](media/gearbox-demo.gif)](media/gearbox-demo.mp4)
 
-*Bench test of the printed gearbox. The GIF is a 5 s preview — [watch the full 59 s video](media/gearbox-demo.mp4).*
+*Bench test of a 3D-printed gearbox. The GIF is a 5 s preview — [watch the full 59 s video](media/gearbox-demo.mp4).*
 
 ## How it works
 
