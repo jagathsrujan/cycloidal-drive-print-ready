@@ -8,6 +8,12 @@ The design is the [HowToMechatronics DIY Cycloidal Drive](https://howtomechatron
 over that CAD: the original STEP is a single flat assembly of 216 objects with no indication
 of what is printable, what you have to buy, or how many of each to make.
 
+## Demo
+
+[![3D-printed gearbox running](media/gearbox-demo.gif)](media/gearbox-demo.mp4)
+
+*Bench test of the printed gearbox. The GIF is a 5 s preview — [watch the full 59 s video](media/gearbox-demo.mp4).*
+
 ## How it works
 
 An eccentric cam on the input shaft drives two cycloidal disks around the inside of a ring of
@@ -52,6 +58,7 @@ Measured on the author's build: **260 N·cm out of the gearbox from a 26 N·cm N
 | `BOM.md` | hardware buy list with prices, sources, and CAD fit checks |
 | `ASSEMBLY.md` | build order, verified stack heights, and the gotchas |
 | `Cycloidal Drive - 3D Printable DIY.STEP` | the original author's CAD, unmodified |
+| `media/` | demo video, GIF preview and poster frame |
 
 ## Print it without slicing
 
